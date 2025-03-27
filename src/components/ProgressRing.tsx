@@ -7,7 +7,7 @@ interface ProgressRingProps {
   strokeWidth: number;
   color: string;
   bgColor?: string;
-  label?: string;
+  label?: React.ReactNode;
   animate?: boolean;
 }
 
