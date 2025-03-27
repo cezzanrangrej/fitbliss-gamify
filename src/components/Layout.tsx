@@ -1,5 +1,6 @@
 
 import React, { ReactNode } from "react";
+import ThemeToggle from "./ThemeToggle";
 
 interface LayoutProps {
   children: ReactNode;
@@ -14,6 +15,7 @@ const Layout = ({ children }: LayoutProps) => {
             <span className="text-2xl font-bold tracking-tight text-gradient-teal">FitBliss</span>
           </div>
           <nav className="flex items-center gap-4">
+            <ThemeToggle />
             <button className="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
